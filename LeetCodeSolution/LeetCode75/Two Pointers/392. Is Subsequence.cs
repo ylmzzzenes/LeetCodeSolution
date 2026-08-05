@@ -1,10 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCodeSolution.LeetCode75.Two_Pointers
+﻿namespace LeetCodeSolution.LeetCode75.Two_Pointers
 {
-    internal class _392
+    public class _392
     {
+        public bool IsSubsequence(string s, string t)
+        {
+            int stringS = 0;           
+            int stringT = 0;
+
+
+            while(stringS <  s.Length && stringT < t.Length)
+            {
+                if (s[stringS] == t[stringT])
+                {
+                    stringS++;
+                }
+                stringT++;
+               
+            }
+            return stringS == s.Length;
+        }
     }
 }
