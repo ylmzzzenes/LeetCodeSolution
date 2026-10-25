@@ -1,4 +1,4 @@
-﻿namespace LeetCodeSolution.LeetCode75
+﻿namespace LeetCodeSolution.LeetCode75.Stack
 {
     public class _735
     {
